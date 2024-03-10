@@ -7,7 +7,7 @@ class Tales {
     try {
       const result = await db
         .promise()
-        .query("INSERT INTO dairyEntries (inputValue, userId) VALUES (?, ?)", [
+        .query("INSERT INTO diaryentries (inputValue, userId) VALUES (?, ?)", [
           inputValue,
           userId,
         ]);
@@ -20,7 +20,7 @@ class Tales {
 
   static async getTales({ userId }) {
     try {
-      const query = "SELECT * FROM dairyEntries WHERE userId = ?";
+      const query = "SELECT * FROM diaryentries WHERE userId = ?";
       const [events] = await db.promise().query(query, [userId]);
       return events;
     } catch (error) {
