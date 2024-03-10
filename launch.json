@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch app.js",
+        "program": "${workspaceFolder}/server/app.js", // Adjust the path here
+        "skipFiles": ["<node_internals>/"],
+        "outFiles": [],
+        "env": {
+          // Add environment variables if required
+        }
+      }
+    ]
+  }
