@@ -24,6 +24,7 @@ import {
   Button,
   Paper,
 } from "@mui/material";
+import Tales from "../HomePage/Tales";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -148,7 +149,8 @@ export default function HomePage({ loginDetails }) {
             }}
           >
             <Tab label="TASK & TARGET" {...a11yProps(0)} />
-            <Tab label="TALES" {...a11yProps(1)} />
+            <Tab label="OVERVIEW" {...a11yProps(1)} />
+            <Tab label="TALES" {...a11yProps(2)} />
           </Tabs>
         </AppBar>
         <SwipeableViews
@@ -161,6 +163,9 @@ export default function HomePage({ loginDetails }) {
           </TabPanel>
           <TabPanel value={value} index={1} dir={theme.direction}>
             <Dashboard />
+          </TabPanel>
+          <TabPanel value={value} index={2} dir={theme.direction}>
+            <Tales />
           </TabPanel>
         </SwipeableViews>
 
