@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TextField, Button } from "@mui/material";
 import { useSnackbar } from "notistack";
-import "../dairy.css";
+import "../diary.css";
 
 const Tales = () => {
   const [appData, setAppData] = useState([]);
@@ -75,7 +75,7 @@ const Tales = () => {
           <TextField
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            placeholder="Here write your diary...."
+            placeholder="Type your story here...."
             multiline
             rows={10}
             maxRows={10}
@@ -110,7 +110,7 @@ const Tales = () => {
             margin: "2rem 0",
           }}
         />
-        <h1 className="diary-history--title">My History of Diary</h1>
+        <h1 className="diary-history--title">History</h1>
         <div id="diary-history">
           {appData.map((entry, index) => (
             <div key={index} className="diary-history--entry">

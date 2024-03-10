@@ -119,10 +119,13 @@ const Calendar = ({ loginDetails }) => {
 
         // Remove the event from the calendar on successful deletion
         selected.event.remove();
-
+        
         // Optionally update state or display a success message
+
         enqueueSnackbar("Event deleted successfully", { variant: "success" });
-      } catch (error) {
+        fetchEvents();
+      }
+      catch (error) {
         console.error("Error deleting event:", error);
         enqueueSnackbar("Failed to delete event", { variant: "error" });
       }
