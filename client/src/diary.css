@@ -1,0 +1,113 @@
+/**/
+/* Layout */
+/* Typography */
+/* Box-model */
+/* Colors */
+/* Extra */
+/**/
+
+
+  header h1 {
+    /* Layout */
+    /* Typography */
+    font-size: 1.7em;
+    text-align: center;
+    /* Box-model */
+    /* Colors */
+    color: #16697a;
+    /* Extra */
+  }
+  
+  .container {
+    /* Layout */
+    /* Typography */
+    /* Box-model */
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1em;
+    /* Colors */
+    /* Extra */
+  }
+  
+  #diary-form {
+    /* Layout */
+    position: relative;
+    /* Typography */
+    text-align: center;
+    /* Box-model */
+    margin-bottom: 1em;
+    /* Colors */
+    /* Extra */
+  }
+  
+  #diary-form--input {
+    /* Layout */
+    display: block;
+    width: 100%;
+    /* Typography */
+    /* Box-model */
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    padding: 0.7em 1em;
+    border-radius: 1em;
+    border: 0;
+    /* Colors */
+    color: #6a5c4b;
+    background-color: #ffa62b;
+    /* Extra */
+    outline: 0;
+  }
+  
+  #diary-form--button {
+    /* Layout */
+    width: 100%;
+    /* Typography */
+    /* Box-model */
+    margin: 0;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    border: 0;
+    /* Colors */
+    background-color: #16697a;
+    color: white;
+    /* Extra */
+    outline: 0;
+  }
+  
+  #diary-form--button:hover {
+    /* Layout */
+    /* Typography */
+    /* Box-model */
+    /* Colors */
+    background-color: #0f434e;
+    /* Extra */
+    cursor: pointer;
+  }
+  
+  .diary-history--title {
+    text-align: center;
+  }
+  
+  .diary-history--entry {
+    /* Layout */
+    padding: 0.7em 1em;
+    display: block;
+  
+    /* Typography */
+    font-family: cursive;
+    font-size: 0.9em;
+  
+    /* Box-model */
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+  
+    /* Colors */
+    color: #333;
+    background: white;
+    box-shadow: 1px 1px 5px #bbb;
+  }
+  
+  .diary-history--entry:hover {
+    background: #f7ead7;
+  }
+  
