@@ -6,7 +6,7 @@ Then cd into both directories and run npm i --force
 
 cd folder-name
 cd backend
-npm run install
+npm i --force
 cd.. // return to folder-name
 cd client
 npm i --force
